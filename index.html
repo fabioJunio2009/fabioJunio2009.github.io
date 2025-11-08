@@ -1,13 +1,97 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset='UTF-8'>
-    <link rel='stylesheet' href='style.css'>
-  </head>
-  <body>
-    
-<h1>Fábio Júnio Oliveira da Silva Filho</h1>
-<h3>fjosf1@aluno.ifal.edu.br</h3>
-
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículo</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+        }
+        img{
+            display: flex;
+            position: relative;
+            padding: 110px 0px 0px 10px;
+        }
+        header h1, header h2{
+            margin: 0;
+            margin-top: 0;
+            display: flex;
+            position: relative;
+            padding-left: 13%;
+        }
+        section{    
+            margin: 10px 20px;
+        }
+        address{
+            margin: 10px 20px;
+        }
+        span.separar{
+            padding: 0px 15px 0px 200px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="foto_curriculo.jpg" alt="" width="10%" >
+        <h1>Fábio Júnio Oliveira da Silva Filho</h1>
+        <h2>Aluno do Instituto Federal de Alagoas do curso Des. de Sistemas e futuro programador fullstack</h2>
+    </header>
+    <hr><br>
+    <address id="contatos">
+        <span class="separar">(82)99811-5989</span>
+        <span class="separar">fjosf1@aluno.ifal.edu.br</span>
+        <span class="separar">eu.fabiojroliveira@gmail.com</span>        
+    </address><br>
+    <hr>
+    <main>
+       <section id="educacao">
+        <h2>Formação acadêmica</h2>
+        <p>Certificado em Python Básico(2022)</p>
+        <p>Certificado em inglês intermediário(2023)</p>
+        <p>Desenvolvimento de Sistemas - IFAL-Poço(2025-2028)</p>
+       </section>
+       <section id="experiencia">
+        <h2>Experiência Profissional</h2>
+        <article>
+            <h3>Estágio de Suporte em TI (2023)</h3>
+            <ul>
+                <li>Suporte a usuários, manutenção de computadores e instalação de softwares.</li>
+            </ul>
+            <h3>Estagiário de Desenvolvimento Web – Agência WebCode (2024)</h3>
+            <ul>
+                <li>Criação e manutenção de sites em HTML, CSS e JavaScript.</li>
+            </ul>
+            <h3>Analista de TI Júnior – InovaIT Tecnologia (2022)</h3>
+            <ul>
+                <li>Monitoramento de sistemas, segurança da informação e criação de relatórios.</li>
+            </ul>
+            <h3>Estagiário de Desenvolvimento de Sistemas – CodeLab Software (2023–2024)</h3>
+            <ul>
+                <li>Desenvolvimento em Python/Java, versionamento com Git e documentação de projetos.</li>
+            </ul>
+        </article>
+       </section>
+       <section id="habilidades">
+            <h2>Habilidades</h2>
+            <article>            
+                <h3>Técnicas(Hard skills)</h3>
+                <ul>
+                    <li>Suporte técnico e manutenção de computadores</li>
+                    <li>HTML, CSS e JavaScript (básico/intermediário)</li>
+                    <li>Instalação de softwares e sistemas operacionais</li>
+                    <li>Noções de Python e Java</li>
+                </ul>
+                <h3>Comportamentais(Soft skills)</h3>
+                <ul>
+                    <li>Boa comunicação e trabalho em equipe</li>
+                    <li>Organização e proatividade</li>
+                    <li>Resolução de problemas</li>
+                    <li>Aprendizagem rápida</li>
+                </ul>
+            </article>
+       </section>
+    </main>
+</body>
 </html>
