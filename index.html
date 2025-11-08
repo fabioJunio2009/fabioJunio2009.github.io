@@ -6,91 +6,126 @@
     <title>Currículo</title>
     <style>
         body{
+            background-color: whitesmoke;
             margin: 0;
             padding: 0;
         }
-        img{
-            display: flex;
-            position: relative;
-            padding: 110px 0px 0px 10px;
+        .principal{
+            border: 3px solid gainsboro;
+            border-radius: 20px;
+            background-color: green  ;
+            color: white;
         }
-        header h1, header h2{
-            margin: 0;
-            margin-top: 0;
+        .principal:hover{
+            width: 100% ;
+            font-size: 20px;
+            background-color: red;
+            color: white;
+
+        }
+        main{
             display: flex;
-            position: relative;
-            padding-left: 13%;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+        }
+        header{
+            display: flex;
+            gap: 20px;
+            background-color: green;
+            color: whitesmoke;
+        }
+        img{
+            width: 210px;
+            height: 220px;
+            border-radius: 200px;
         }
         section{    
             margin: 10px 20px;
         }
         address{
-            margin: 10px 20px;
+            justify-content: center;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: red;
+            color: white;
+            font-style: oblique ;
         }
-        span.separar{
-            padding: 0px 15px 0px 200px;
+        a{
+            color: darkblue;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="foto_curriculo.jpg" alt="" width="10%" >
-        <h1>Fábio Júnio Oliveira da Silva Filho</h1>
-        <h2>Aluno do Instituto Federal de Alagoas do curso Des. de Sistemas e futuro programador fullstack</h2>
+        <img src="foto_curriculo.jpg" alt="">
+        <div>
+            <h1>Fábio Júnio Oliveira da Silva Filho</h1>
+            <h2>Futuro programador fullstack</h2>
+        </div>  
     </header>
-    <hr><br>
+    <hr>
     <address id="contatos">
-        <span class="separar">(82)99811-5989</span>
-        <span class="separar">fjosf1@aluno.ifal.edu.br</span>
-        <span class="separar">eu.fabiojroliveira@gmail.com</span>        
-    </address><br>
+        <p>Linkedin: <a href="https://br.linkedin.com/in/leofernandesmo?original_referer=https%3A%2F%2Fwww.google.com%2F">Fábio Jr.</a></p>
+        <p>(82)99811-5989</p>
+        <p>fjosf1@aluno.ifal.edu.br</p>
+        <p>eu.fabiojroliveira@gmail.com</p>        
+    </address>
     <hr>
     <main>
        <section id="educacao">
-        <h2>Formação acadêmica</h2>
-        <p>Certificado em Python Básico(2022)</p>
-        <p>Certificado em inglês intermediário(2023)</p>
-        <p>Desenvolvimento de Sistemas - IFAL-Poço(2025-2028)</p>
-       </section>
+            <div class="principal">
+                <h2>Formação acadêmica</h2>
+                <p>Python básico - Curso em vídeo(2022)</p>
+                <p>Inglês intermediário - YES Idiomas(2023)</p>
+                <p>Técnico de Informática - IFAL-Poço(2025-2028)</p>
+            </div>
+        </section>
        <section id="experiencia">
-        <h2>Experiência Profissional</h2>
-        <article>
-            <h3>Estágio de Suporte em TI (2023)</h3>
-            <ul>
-                <li>Suporte a usuários, manutenção de computadores e instalação de softwares.</li>
-            </ul>
-            <h3>Estagiário de Desenvolvimento Web – Agência WebCode (2024)</h3>
-            <ul>
-                <li>Criação e manutenção de sites em HTML, CSS e JavaScript.</li>
-            </ul>
-            <h3>Analista de TI Júnior – InovaIT Tecnologia (2022)</h3>
-            <ul>
-                <li>Monitoramento de sistemas, segurança da informação e criação de relatórios.</li>
-            </ul>
-            <h3>Estagiário de Desenvolvimento de Sistemas – CodeLab Software (2023–2024)</h3>
-            <ul>
-                <li>Desenvolvimento em Python/Java, versionamento com Git e documentação de projetos.</li>
-            </ul>
+            <div class="principal">
+                <h2>Experiência Profissional</h2>
+                <article>
+                
+                    <h3>Estágio de Suporte em TI (2023)</h3>
+                    <ul>
+                        <li>Suporte a usuários, manutenção de computadores e instalação de softwares.</li>
+                    </ul>
+                    <h3>Estagiário de Desenvolvimento Web – Agência WebCode (2024)</h3>
+                    <ul>
+                        <li>Criação e manutenção de sites em HTML, CSS e JavaScript.</li>
+                    </ul>
+                    <h3>Analista de TI Júnior – InovaIT Tecnologia (2022)</h3>
+                    <ul>
+                        <li>Monitoramento de sistemas, segurança da informação e criação de relatórios.</li>
+                    </ul>
+                    <h3>Estagiário de Desenvolvimento de Sistemas – CodeLab Software (2023–2024)</h3>
+                    <ul>
+                        <li>Desenvolvimento em Python/Java, versionamento com Git e documentação de projetos.</li>
+                    </ul>
+            </div>
         </article>
        </section>
        <section id="habilidades">
-            <h2>Habilidades</h2>
-            <article>            
-                <h3>Técnicas(Hard skills)</h3>
-                <ul>
-                    <li>Suporte técnico e manutenção de computadores</li>
-                    <li>HTML, CSS e JavaScript (básico/intermediário)</li>
-                    <li>Instalação de softwares e sistemas operacionais</li>
-                    <li>Noções de Python e Java</li>
-                </ul>
-                <h3>Comportamentais(Soft skills)</h3>
-                <ul>
-                    <li>Boa comunicação e trabalho em equipe</li>
-                    <li>Organização e proatividade</li>
-                    <li>Resolução de problemas</li>
-                    <li>Aprendizagem rápida</li>
-                </ul>
-            </article>
+            <div class="principal">
+                <h2>Habilidades</h2>
+                <article>            
+                    <h3>Técnicas(Hard skills)</h3>
+                    <ul>
+                        <li>Suporte técnico e manutenção de computadores</li>
+                        <li>HTML, CSS e JavaScript (básico/intermediário)</li>
+                        <li>Instalação de softwares e sistemas operacionais</li>
+                        <li>Noções de Python e Java</li>
+                    </ul>
+                    <h3>Comportamentais(Soft skills)</h3>
+                    <ul>
+                        <li>Boa comunicação e trabalho em equipe</li>
+                        <li>Organização e proatividade</li>
+                        <li>Resolução de problemas</li>
+                        <li>Aprendizagem rápida</li>
+                    </ul>
+                </article>
+            </div>
        </section>
     </main>
 </body>
