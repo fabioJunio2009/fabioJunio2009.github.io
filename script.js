@@ -21,10 +21,9 @@ function takeName(){
         separatedName.push(secondName)
         return separatedName
     }
-}
-function getFirstName(){
-    document.getElementById('firstName').innerHTML = takeName()[0]
-}
-function getSecondName(name){
-    document.getElementById('secondName').innerHTML = takeName()[0]
+}   
+function showNames(){
+    const names = takeName()
+    document.getElementById('firstName').innerHTML = names[0]
+    document.getElementById('secondName').innerHTML = names[1]
 }
