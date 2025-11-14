@@ -1,26 +1,16 @@
 function takeName(){
     var name = document.getElementById("completeName").value
     var separatedName = []
-    var firstName = ''
-    var secondName = ''
     const findSpace = name.indexOf(" ")
     if(findSpace == -1){
         separatedName.push(name)
-        return separatedName
     }
     else{
-        for(let i = 0; i < name.length; i++){
-            if(i < findSpace){
-                firstName += name[i]; 
-            }
-            else if (i > findSpace){
-                secondName += name[i]
-            }
-        }
-        separatedName.push(firstName)
-        separatedName.push(secondName)
-        return separatedName
+        var firstName = name.slice(0, findSpace)
+        var secondName = name.slice((findSpace + 1))
+        separatedName.push(firstName, secondName)
     }
+    return separatedName
 }   
 function showNames(){
     const names = takeName()
