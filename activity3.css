@@ -1,0 +1,19 @@
+img{
+    width: 33%;
+
+}
+body{
+    background-image:url("fundo.jpg")
+}
+button{
+    margin-left: 70px;
+    margin-right: 70px;
+    top: 60%;
+}
+
+#robotron {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+
