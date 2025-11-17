@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #4a6ea9;   
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+
+.container {
+    border: 2px solid #8fb1e0;
+    padding: 25px;
+    width: 500px;
+    margin: 0 auto;
+    border-radius: 3px;
+}
+
+/* Labels alinhados */
+label {
+    display: inline-block;
+    width: 60px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px;
+    width: 200px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+    border: 1px solid #777;
+    border-radius: 2px;
+
+}
+
+button {
+    padding: 7px 12px;
+    border: 1px solid #777;
+    background-color: #e8e8e8;
+    cursor: pointer;
+    width: 120px;
+}
+
+button:hover {
+    background-color: #dcdcdc;
+}
+
+.resultado {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 180px;
+    margin-top: 10px;
+    display: inline-block;
+    vertical-align: top;
+    
+}
