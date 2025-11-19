@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dividir nome</title>
+    <title>Separar nome do sobrenome</title>
+    <link rel="stylesheet" href="activity1.css">
 </head>
 <body>
-    <div>
-        <label for="">Nome completo</label>
-        <input type="text" name="" id="completeName">
+    <div id="campos">
+        <div>
+            <label for="">Nome completo:</label>
+            <input type="text" name="" id="completeName">
+        </div>
         <button onclick="showNames()">>>></button>
+        <div id="separa">
+            <label for="">Nome:</label>
+            <div class="resultado">
+                <p id="firstName"></p>
+            </div>
+            <label for="">Sobrenome:</label>
+            <div class="resultado">
+                <p id="secondName"></p>
+            </div>
+        </div>
     </div>
-    <div>
-        <label for="">Nome:</label>
-        <p id="firstName"></p>
-        <label for="">Sobrenome</label>
-        <p id="secondName"></p>
-    </div>
+    
     <script src="activityScript1.js"></script>
-    <a href="activity2.html">Próxima atividade</a>
 </body>
-</html>
+</html> 
