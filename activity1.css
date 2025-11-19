@@ -1,0 +1,32 @@
+#campos{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 75px;
+    height: 28px;
+    font-size: 10px;
+}
+input{
+    height: 25px;
+}
+.resultado{
+    border: solid black 1px;
+    width: 240px;
+    height: 38px;
+    padding: 5px;
+    overflow-wrap: break-word;
+    text-align: center; 
+}
+#separa{
+    display: flex;
+    flex-direction: column;
+    column-gap: 20px;
+}
