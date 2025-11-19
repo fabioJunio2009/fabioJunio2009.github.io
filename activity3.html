@@ -7,10 +7,16 @@
     <link rel="stylesheet" href="activity3.css">
 </head>
 <body>
-    <div>
-        <img src="robotron.png" alt="" id="robotron">
-        <button onclick="changeLeft()"><<</button>
-        <button onclick="changeRight()">>></button>
+   <div class="filha-1">
+        <div class="img-area">
+            <img src="robotron.png" id="robotron" class="frente">
+            <img src="estrutura.png" class="atras">
+        </div>
+
+        <div class="botoes">
+            <button id="leftButtom" onclick="changeToLeft()"><<</button>
+            <button id="rightButtom" onclick="changeToRight()">>></button>
+        </div>  
     </div>
     <script src="activityScript3.js"></script>
 </body>
