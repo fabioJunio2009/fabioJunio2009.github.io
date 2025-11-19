@@ -1,19 +1,43 @@
-img{
-    width: 33%;
-
-}
 body{
-    background-image:url("fundo.jpg")
-}
-button{
-    margin-left: 70px;
-    margin-right: 70px;
-    top: 60%;
+    background-image: url(fundo.jpg);
 }
 
-#robotron {
+.filha-1{
+    position: relative;
+    width: 35%;           
+    margin: 0 auto;         
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px;
+}
+
+.filha-1 img{
+    width: 100%;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%);
+    left: 0;
+    top: 0;
 }
 
+.frente{
+    z-index: 2;
+}
+
+.atras{
+    z-index: 1;
+}
+
+.img-area{
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+.filha-1 button{
+    width: 110px;
+    height: 40px;
+    margin-top: 170px;
+    gap: 40px;
+    position: relative;
+    z-index: 3;
+
+}
