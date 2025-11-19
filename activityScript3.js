@@ -1,26 +1,19 @@
 var index = 0
-const cores = [
-    "robotron-vermelho.png",
-    "robotron-preto.png",
-    "robotron-rosa.png",
-    "robotron-azul.png",
-    "robotron-vermelho.png"
-]
+const robotronCores = ["robotron-azul.png", "robotron-amarelo.png", "robotron-branco.png", "robotron-preto.png", "robotron-rosa.png", "robotron-vermelho.png"]
 
-function atualizar() {
-    document.getElementById("robotron").src = cores[index];
-}
-
-function changeRight() {
-    index++;
-    if (index >= cores.length) index = 0;
-    atualizar();
-}
-
-function changeLeft() {
+function changeToLeft(){
     index--;
-    if (index < 0){
-        index = cores.length - 1;
-    } 
-    atualizar();
+    if(index < 0){
+        index = robotronCores.length - 1;
+    }
+    document.getElementById("robotron").src = robotronCores[index]
 }
+
+function changeToRight(){
+    index++;
+    if(index >= robotronCores.length){
+        index = 0;
+    }
+    document.getElementById("robotron").src = robotronCores[index]
+}
+
