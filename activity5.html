@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pré-Matrícula</title>
+    <link rel="stylesheet" href="activity5.css">
+</head>
+<body>
+    <div class="header">
+        <h1>Escola Virtual</h1>
+        <h2>Formulário de Pré-Matrícula</h2>
+    </div>
+    <hr>
+    <form>
+        <!-- DADOS PESSOAIS -->
+        <div class="box">
+            <p>Dados Pessoais</p>
+            
+            <div class="datas">
+                <div class="space-between">
+                    <label>Nome do Aluno:</label>
+                    <input type="text" class="obrigatorio" id="nomeDoALuno">
+                </div>
+
+                <div class="space-between">
+                    <label>Nascimento (dd/mm/aaaa):</label>
+                    <input type="date" class="obrigatorio" id="nascimento">
+                </div>
+                
+                <div class="space-between">
+                    <label>Nome da Mãe:</label>
+                    <input type="text" class="obrigatorio" id="nomedaMae">
+                </div>
+                
+                <div class="space-between">
+                    <label>Nome do Pai:</label>
+                    <input type="text" class="obrigatorio" id="nomedoPae">
+                </div>
+            
+                <div>
+                    <label for="">Telefone:</label>
+                    <span>DDD</span>
+                    <select name="" id="ddd" >
+                        <!-- Maceió -->
+                        <option>82</option>
+                        
+                        <!-- Bahia -->
+                        <option>71</option>
+                        <option>73</option>
+                        <option>74</option>
+                        <option>75</option>
+                        <option>77</option>
+
+                        <!-- Sergipe -->
+                        <option>79</option>
+
+                        <!-- Pernambuco -->
+                        <option>81</option>
+                        <option>87</option>
+
+                        <!-- Paraíba -->
+                        <option>83</option>
+
+                        <!-- Piauí -->
+                        <option>86</option>
+                        <option>89</option>
+
+                        <!-- Rio Grande do Norte -->
+                        <option>84</option>
+
+                        <!-- Ceará -->
+                        <option>85</option>
+                        <option>88</option>
+
+                        <!-- Maranhão -->
+                        <option>98</option>
+                        <option>99</option>
+                    </select>
+                    <label for="">
+                        tel(<input type="tel" id="tel" pattern="9[0-9]{4}[0-9]{4}" placeholder="Ex: 998888889" required>)
+                    </label>
+                </div>
+
+                <div>
+                    <label>E-mail:</label>
+                    <input type="email" id="email" class="obrigatorio">
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <p class="titulo">Informações de Matrícula:</p>
+
+            <div class="row">
+
+                <div class="column">
+                    <label>Série:</label>
+                    <select class="obrigatorio">
+                        <option>pré-escolar</option>
+                        <option>Ensino Fundamental I</option>
+                        <option>Ensino Fundamental II</option>
+                        <option>Ensino Médio</option>
+                    </select>
+                </div>
+
+                <div class="column">
+                    <label>Turno:</label>
+                    <label><input type="radio" name="turno" class="obrigatorio"> Manhã</label>
+                    <label><input type="radio" name="turno" class="obrigatorio"> Tarde</label>
+                </div>
+
+                <div class="column">
+                    <label>Atividades Extracurriculares:</label>
+                    <label><input type="checkbox" class="checkbox"> Informática</label>
+                    <label><input type="checkbox" class="checkbox"> Música</label>
+                    <label><input type="checkbox" class="checkbox"> Balé</label>
+                    <label><input type="checkbox" class="checkbox"> Pintura</label>
+                    <label><input type="checkbox" class="checkbox"> Judô</label>
+                    <label><input type="checkbox" class="checkbox"> Futebol</label>
+                </div>
+
+            </div>
+        </div>
+        <div class="buttons">
+        <button type="submit" id="send">Enviar Formulário</button>
+        <button type="reset">Limpar Campos</button>
+        </div>
+    </form>
+    <script src="activityScript5.js"></script>
+</body>
+</html>

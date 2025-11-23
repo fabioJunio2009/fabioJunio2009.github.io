@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>robotron</title>
+    <link rel="stylesheet" href="activity4.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="filha-1">
+        <div class="dados">
+            <label for="">Braços</label>
+            <div class="alinharBotao">
+                <button class="lower">-</button>
+                <span id="h1">00</span>
+                <button class="higher">+</button>
+            </div>
+        </div>
+        <hr>
+        <div class="dados">
+            <label for="">Blindagem</label>
+            <div class="alinharBotao">
+                <button class="lower">-</button>
+                <span>00</span>
+                <button class="higher">+</button>
+            </div>
+        </div>
+        <hr>
+        <div class="dados">
+            <label for="">Núcleos</label>
+            <div class="alinharBotao">
+                <button class="lower">-</button>
+                <span>00</span>
+                <button class="higher">+</button>
+            </div>        
+        </div>
+        <hr>
+        <div class="dados">
+            <label for="">Pernas</label>
+            <div class="alinharBotao">
+                <button class="lower">-</button>
+                <span>00</span>
+                <button class="higher">+</button>
+            </div>
+        </div>
+    </div>
+   <div class="filha-2">
+        <div class="img-area">
+            <img src="robotron-azul.png" id="robotron" class="frente">
+            <img src="estrutura.png" class="atras">
+        </div>
+
+        <div class="botoes">
+            <button id="leftButtom" onclick="changeToLeft()"><<</button>
+            <button id="rightButtom" onclick="changeToRight()">>></button>
+        </div>  
+    </div>
+    <script src="activityScript4.js"></script>
+</body>
+</html>
