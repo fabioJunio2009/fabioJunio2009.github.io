@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrato Bancário</title>
+    <link rel="stylesheet" href="activity6.css">
+</head>
+<body>
+    <div class="container">
+        <label>Categoria:</label>
+        <select id="categoria">
+            <option>Mercado</option>
+            <option>Aluguel</option>
+            <option>Luz</option>
+            <option>Água</option>
+            <option>Transporte</option>
+        </select>
+
+        <label>Valor:</label>
+        <input type="number" id="valor">
+
+        <label>Data:</label>
+        <input type="date" id="data">
+
+        <div class="buttons">
+            <button id="add">Adicionar</button>
+            <button id="calc">Calcular</button>
+        </div>
+
+        <table class="extrato">
+            <thead>
+                <tr><th colspan="3">Extrato Bancário</th></tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
