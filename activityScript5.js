@@ -1,4 +1,3 @@
-// ====== LIMITE DE CHECKBOX ======
 const checkboxes = document.querySelectorAll(".checkbox");
 const maxMarcados = 3;
 
@@ -15,7 +14,6 @@ checkboxes.forEach(checkbox => {
 });
 
 
-// ====== VERIFICAR CAMPOS OBRIGATÓRIOS ======
 function verifyCamps() {
     const camposObrigatorios = document.querySelectorAll('.obrigatorio');
     let campoVazio = false;
@@ -40,7 +38,6 @@ function verifyCamps() {
             }
         }
 
-        // Qualquer outro input/select obrigatório
         else {
             if (valor.value.trim() === "") {
                 campoVazio = true;
@@ -52,10 +49,9 @@ function verifyCamps() {
 }
 
 
-// ===== ENVIAR FORMULÁRIO =====
 function ifValid(event) {
 
-    // impedir envio automático
+
     event.preventDefault();
 
     const invalid = verifyCamps();
@@ -68,6 +64,5 @@ function ifValid(event) {
 }
 
 
-// ===== BOTÃO =====
 const enviar = document.getElementById("send");
 enviar.addEventListener("click", ifValid);
