@@ -1,3 +1,4 @@
+// ====== LIMITE DE CHECKBOX ======
 const checkboxes = document.querySelectorAll(".checkbox");
 const maxMarcados = 3;
 
@@ -13,20 +14,31 @@ checkboxes.forEach(checkbox => {
     });
 });
 
+function verifyEmail(){
+    const contentEmail = document.querySelector('#email').value
+    
+    if(!(contentEmail.includes('@')) || !(contentEmail.includes('.'))){
+         alert('Email inválido, coloque no padrã0 estabelecido')
+    }
+    else{
+        return true
+    }
+}
 
 function verifyCamps() {
     const camposObrigatorios = document.querySelectorAll('.obrigatorio');
+
     let campoVazio = false;
 
     camposObrigatorios.forEach(valor => {
 
-        // Caso seja um RADIO
+
         if (valor.type === "radio") {
 
             const radiosDoGrupo = document.getElementsByName(valor.name);
             let algumMarcado = false;
 
-            // Converte NodeList para Array
+
             Array.from(radiosDoGrupo).forEach(radio => {
                 if (radio.checked) {
                     algumMarcado = true;
@@ -38,6 +50,7 @@ function verifyCamps() {
             }
         }
 
+        // Qualquer outro input/select obrigatório
         else {
             if (valor.value.trim() === "") {
                 campoVazio = true;
@@ -49,10 +62,12 @@ function verifyCamps() {
 }
 
 
+
 function ifValid(event) {
 
-
     event.preventDefault();
+
+    verifyEmail()
 
     const invalid = verifyCamps();
 
@@ -62,6 +77,11 @@ function ifValid(event) {
         alert('Pré-Matrícula concluída');
     }
 }
+
+
+const enviar = document.getElementById("send");
+enviar.addEventListener("click", ifValid);
+
 
 
 const enviar = document.getElementById("send");
