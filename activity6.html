@@ -9,7 +9,7 @@
 <body>
     <div class="container">
         <label>Categoria:</label>
-        <select id="categoria">
+        <select id="campo-categoria">
             <option>Mercado</option>
             <option>Aluguel</option>
             <option>Luz</option>
@@ -18,23 +18,25 @@
         </select>
 
         <label>Valor:</label>
-        <input type="number" id="valor">
+        <input type="number" id="campo-valor">
 
         <label>Data:</label>
-        <input type="date" id="data">
+        <input type="date" id="campo-data">
 
+        
         <div class="buttons">
             <button id="add">Adicionar</button>
             <button id="calc">Calcular</button>
         </div>
 
-        <table class="extrato">
+        <table class="tabela">
             <thead>
                 <tr><th colspan="3">Extrato Bancário</th></tr>
             </thead>
-            <tbody>
+            <tbody id="tabela">
             </tbody>
         </table>
     </div>
+    <script src="activityScript6.js"></script>
 </body>
-</html>
+</html> 
