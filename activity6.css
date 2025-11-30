@@ -47,7 +47,7 @@ button:hover {
     background-color: #b0c8e8;
 }
 
-.extrato {
+.tabela {
     width: 100%;
     margin-top: 20px;
     border-collapse: collapse;
@@ -56,13 +56,21 @@ button:hover {
     border: 1px solid #000;
 }
 
-.extrato th {
+.tabela th {
     background: #e6e6e6;
     padding: 8px;
     font-size: 16px;
 }
 
-.extrato td {
+.tabela td {
     padding: 8px;
+    border: solid black 1px;
     border-top: 1px solid #000;
+}
+.tabela tr{
+    border: solid black 1px;
+    width: 500px;
+}
+table{
+    width: 500px;
 }
