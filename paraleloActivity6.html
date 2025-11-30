@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resumo De Gastos</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif; 
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center; 
+            background-color: #f5f5f5;
+        }
+        
+        #resumo-gastos {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            width: 600px;
+            height: 400px; 
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 35px;
+            font-weight: bold;
+            text-align: center; 
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 25px;
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        #total, #totalMercado {
+            margin-bottom: 15px; 
+        }
+    </style>
+
+</head>
+<body>
+    <div id="resumo-gastos">
+        <h1>Resumo: </h1><br>
+        <p id="total"></p>
+        <p id="totalMercado"></p>
+    </div>
+    <script>
+        window.onload = function(){
+            const gastoTotal = localStorage.getItem('gastoTotal')
+            const valorMercado = localStorage.getItem('gastoMercado')
+            const gastosNosMeses = JSON.parse(localStorage.getItem('mesesGastos'))
+            const total = document.getElementById('total')
+            const mercado = document.getElementById('totalMercado')
+            function gastoCadaMes(){
+                const resumo = document.getElementById('resumo-gastos')
+                for (const chave in gastosNosMeses) {
+                    if (Object.hasOwnProperty.call(gastosNosMeses, chave)) {
+                        const newP = document.createElement('p')
+                        const valor = gastosNosMeses[chave];
+                        newP.textContent = `Total do Mês ${chave}: R$${valor}`
+                        resumo.appendChild(newP)
+                    }
+                }
+            }
+
+            gastoCadaMes()
+            
+            mercado.textContent = `Total gasto no Mercado: R$${valorMercado}`
+            total.textContent = `Total gasto: R$${gastoTotal}`
+        }
+
+    </script>
+</body>
+</html>
